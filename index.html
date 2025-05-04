@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROFIL SAYA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset>
+        <header>
+            <h1>WELCOME TO MY PROFIL</h1>
+            <nav>
+                <ul>
+                    <li><a href="#profil">Profil</a></li>
+                    <li><a href="#multimedia">Multimedia</a></li>
+                    <li><a href="#projek">Projek</a></li>
+                    <li><a href="#kontak">Kontak</a></li>
+                </ul>
+            </nav>
+        </header>
+    </fieldset>
+
+    <main>
+        <section id="profil">
+            <fieldset>
+                <img src="https://gapura.uisi.ac.id/assets/upload/user/300x300/885a3bec8c83c820f9f744d5f4452101.JPG" alt="Foto Profil">
+                <h1>Hallo Rekk!!</h1>
+                <p>"Perkenalkan, nama saya Amirul Mukminin. Saya berasal dari Gresik dan saat ini berkuliah di Universitas Internasional Semen Indonesia (UISI), jurusan Sistem Informasi. Saya tertarik dengan web design. Saat ini, saya juga sedang mempelajari hal kecil untuk web design. Di luar akademik, saya suka bermain game dan menonton anime."</p>
+                <h2>Ini beberapa hobi saya:</h2>
+                <ul>
+                    <li>Bermain Game</li>
+                    <li>Bermain Badminton</li>
+                    <li>Menonton Anime</li>
+                </ul>
+                <aside>
+                    <h3>Bermain Game</h3>
+                    <p>Saya suka bermain game, terutama yang bergenre Mobile dan FPS. Selain menghibur, game juga bisa melatih cara berpikir dan mengambil keputusan.</p>
+                </aside>
+                <aside>
+                    <h3>Bermain Badminton</h3>
+                    <p>Badminton jadi salah satu olahraga favorit saya karena selain menyehatkan, juga menyenangkan untuk dimainkan bersama teman.</p>
+                </aside>
+                <aside>
+                    <h3>Menonton Anime</h3>
+                    <p>Saya menikmati menonton anime karena banyak cerita yang menarik dan karakter yang inspiratif. Selain itu, anime juga sering punya pesan yang bisa diambil.</p>
+                </aside>
+            </fieldset>
+        </section>
+
+        <section id="multimedia">
+            <fieldset>
+                <h1>Multimedia</h1>
+                <video controls>
+                    <source src="BelajarHTML.mp4" type="video/mp4">
+                </video>
+                <audio controls>
+                    <source src="In The End - Linkin Park.mp3" type="audio/mp3">
+                </audio>
+            </fieldset>
+        </section>
+
+        <section id="projek">
+            <fieldset>
+                <h2>Hasil Karya</h2>
+                <div class="projek-grid">
+                    <img src="gambar1.png" alt="gambar1" width="335" height="240">
+                    <img src="gambar2.png" alt="gambar2" width="335" height="240">
+                </div>
+                <article>
+                    <h3>1. UI/UX Desain Toko Kopi Bubuk</h3>
+                    <p>Ini adalah hasil karya desain yang dibuat untuk penjualan kopi bubuk...</p>
+                    <h3>2. UI/UX Desain Bengkel Servis</h3>
+                    <p>Ini adalah hasil karya desain yang dibuat untuk Bengkel Servis...</p>
+                </article>
+            </fieldset>
+        </section>
+
+        <section id="pexels-gallery">
+            <fieldset>
+                <h2>Galeri Pexels</h2>
+                <div id="pexelsImages" class="projek-grid"></div>
+            </fieldset>
+        </section>
+        
+        <section id="kontak">
+            <fieldset>
+                <h2>Formulir Kontak</h2>
+                <form action="proses_form.php" method="post">
+                    <label>Nama:</label>
+                    <input type="text" name="nama" placeholder="Masukkan nama" required><br><br>
+
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="Masukkan email" required><br><br>
+
+                    <label>Nomor Telepon:</label>
+                    <input type="tel" name="telepon" placeholder="Masukkan nomor telepon" required><br><br>
+
+                    <label>Jenis Pesan:</label>
+                    <select name="jenis_pesan">
+                        <option value="pertanyaan">Pertanyaan</option>
+                        <option value="masukan">Masukan</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select><br><br>
+
+                    <label>Pesan:</label>
+                    <textarea name="pesan" rows="4" placeholder="Tulis pesan Anda di sini" required></textarea><br>
+
+                    <button type="submit">Kirim</button>
+                </form>
+            </fieldset>
+        </section><br>
+
+        <section id="bukutamu">
+            <fieldset>
+                <h2>Buku Tamu</h2>
+                <form id="guestForm">
+                    <label>Nama:</label>
+                    <input type="text" id="nama" placeholder="Masukkan nama Anda" required><br><br>
+
+                    <label>Alamat:</label>
+                    <input type="text" id="alamat" placeholder="Masukkan alamat Anda" required><br><br>
+
+                    <label>Pesan:</label>
+                    <textarea id="pesan" rows="4" placeholder="Tulis pesan di sini" required></textarea><br><br>
+
+                    <button type="submit" id="btnTambah">Tambah Tamu</button>
+                </form>
+
+                <div id="daftarTamu">
+                    <h3>Daftar Tamu:</h3>
+                    <ul id="listTamu"></ul>
+                </div>
+            </fieldset>
+        </section>
+    </main>
+
+    <fieldset>
+        <footer>
+            <p>Hak Cipta &copy; BY: AMIRUL MUKMININ</p>
+            <p><a href="mailto:amirul.mukminin23@student.uisi.ac.id">amirul.mukminin23@student.uisi.ac.id</a></p>
+        </footer>
+    </fieldset>
+
+    <script src="script.js"></script>
+</body>
+</html>

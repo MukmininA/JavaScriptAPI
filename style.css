@@ -1,0 +1,292 @@
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #343a40;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.4em;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 6px 12px;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#profil h1 {
+    text-align: center;
+}
+
+#profil p {
+    text-align: justify;
+}
+
+#profil img {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    width: 200px;
+}
+
+#multimedia {
+    text-align: center;
+}
+
+#multimedia video {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    display: block;
+    box-sizing: border-box;
+}
+
+#projek {
+    text-align: center;
+}
+
+#projek img {
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: auto;
+}
+
+#projek article {
+    background-color: #fff;
+    margin: 20px auto;
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.projek-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+#kontak h2 {
+    text-align: center;
+}
+
+#kontak {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+#kontak form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#kontak input,
+#kontak select,
+#kontak textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#kontak button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+#kontak button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 20px 0;
+    margin-top: 40px;
+    text-align: center;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 8px;
+}
+
+footer a:hover {
+    color: #00d1ff;
+}
+
+/* MOBILE (<600px) */
+@media (max-width: 599px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .projek-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #kontak {
+        width: 100%;
+    }
+}
+
+/* TABLET (600px - 1024px) */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .projek-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+}
+
+/* DESKTOP (>1024px) */
+@media (min-width: 1025px) {
+    .projek-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #projek article {
+        width: 60%;
+    }
+}
+
+
+#bukutamu h2 {
+    text-align: center;
+}
+
+#bukutamu {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin: auto;
+}
+
+#bukutamu form {
+    max-width: 600px;
+    margin: auto;
+}
+
+#bukutamu input,
+#bukutamu select,
+#bukutamu textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#bukutamu button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+#bukutamu button:hover {
+    background-color: #0056b3;
+}
+
+.selesai {
+    background-color: #d4edda;
+    text-decoration: line-through;
+    transition: all 0.3s ease;
+}
+
+#pexels-gallery h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#pexels-gallery img {
+    width: 80%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+
+#pexels-gallery img:hover {
+    transform: scale(1.05);
+}
